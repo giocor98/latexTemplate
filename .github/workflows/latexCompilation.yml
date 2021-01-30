@@ -9,17 +9,11 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v1
 
-      - name: Prepare report
+      - name: Prepare template
         uses: xu-cheng/latex-action@master
         with:
           root_file: 'main.tex'
           working_directory:  'src'
-
-      - name: Prepare bibliography
-        uses: actions/latex-biber-action@v2
-        with:
-          filename: 'src/main.tex'
-          output-directory: 'report/src'
 
       - name: Compile project document
         uses: xu-cheng/latex-action@master
