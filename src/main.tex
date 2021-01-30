@@ -1,0 +1,79 @@
+\input{./common/commandsFile}
+
+\addbibresource{main.bib}
+
+\begin{document}
+
+%TITLE PAGE
+
+\begin{titlepage}
+
+%LOGO
+
+{\begin{table}[t!]
+%\centering
+%\begin{tabu} to \textwidth { X[1.3,r,p] X[1.7,l,p] }
+{\includegraphics[width=0.8\textwidth]{./../img/struct/logo}}
+\newline
+\textcolor{Blue}{\textbf{\Large{Latex Template} \newline \small{Corbetta Giorgio}}}
+%\end{tabu}
+\end{table}}~ \\ [1cm]
+
+%TITLE
+
+\includegraphics[width=1\textwidth]{./../img/struct/project}\\ [1cm]
+
+\begin{flushleft}
+
+%Replace the text string with your title
+{\textcolor{Blue}{\textbf{\Huge{Titolo}}}} \\ [1cm]
+
+\textcolor{Blue}{\textbf{\Large{sottotitolo}}}
+
+\end{flushleft}
+
+\end{titlepage}
+
+%Define deliverable specific info
+%Replace cell contents where needed
+\begin{table}[h!]
+\begin{tabu} to \textwidth { X[0.3,r,p] X[0.7,l,p] }
+\hline
+
+\textbf{Deliverable:} & main.pdf\\
+\textbf{Title:} & titolo \\
+\textbf{Authors:} & Giorgio Corbetta \\
+\textbf{Version:} & 1.0 \\
+\textbf{Date:} & 30-January-2021 \\
+\textbf{Download page:} & \href{https://github.com/giocor98/latexTemplate}{latex template repo} \\
+\hline
+\end{tabu}
+\end{table}
+
+
+
+
+\setcounter{page}{2}
+
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\addcontentsline{toc}{section}{Table of Contents}
+\tableofcontents
+\newpage
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+\clearpage
+{\color{Blue}{\section{Introduction}}}
+\label{sect:introduction}
+\input{Files/introduction}
+
+\clearpage
+\addcontentsline{toc}{section}{References}
+
+%------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+\printbibliography
+
+\end{document}
